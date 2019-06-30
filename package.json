@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/thiagodsign/fvv/issues"
   },
-  "homepage": "https://github.com/thiagodsign/fvv#readme"
+  "homepage": "https://github.com/thiagodsign/fvv#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.2.0"
+  }
 }

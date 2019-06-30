@@ -1,0 +1,38 @@
+$fonte-padrao: "Gotham Rounded";
+$fonte-regular: 400;
+$fonte-seminegrito: 600;
+$fonte-negrito: 700;
+$fonte-italica: 800;
+
+@font-face {
+  font-family: $fonte-padrao;
+  font-style: normal;
+  font-weight: $fonte-regular;
+  font-display: swap;
+  src: local("Gotham R Book"), local("Gotham-R-Book"), url(../fontes/Gotham-R-Book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: $fonte-padrao;
+  font-style: normal;
+  font-weight: $fonte-seminegrito;
+  font-display: swap;
+  src: local("Gotham R Medium"), local("Gotham-R-Medium"), url(../fontes/Gotham-R-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: $fonte-padrao;
+  font-style: normal;
+  font-weight: $fonte-negrito;
+  font-display: swap;
+  src: local("Gotham R Bold"), local("Gotham-R-Bold"), url(../fontes/Gotham-R-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: $fonte-padrao;
+  font-style: normal;
+  font-weight: $fonte-italica;
+  font-display: swap;
+  src: local("Gotham R Bold Italic"), local("Gotham-R-Bold-Italic"),
+    url(../fontes/Gotham-R-Bold-Italic.otf) format("opentype");
+}

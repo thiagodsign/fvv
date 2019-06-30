@@ -1,0 +1,59 @@
+.sexta-secao {
+  background: darken(#643b8f, 20%);
+  height: 480px;
+  display: flex;
+  .conteudo {
+    width: calc(100vw - 48px);
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .logo {
+      height: 120px;
+      margin-right: 72px;
+      @media screen and (max-width: 1000px) {
+        margin-right: 0px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .conteudo-secundario {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    h3 {
+      font-weight: $fonte-regular;
+      color: #f8b841;
+      font-size: 24px;
+    }
+    .logo-fvv {
+      margin: 0 32px;
+      height: 120px;
+    }
+
+    .infos {
+      img {
+        height: 24px;
+        margin-right: 8px;
+      }
+      p {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 80px;
+  }
+}

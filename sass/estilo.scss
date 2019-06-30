@@ -1,0 +1,24 @@
+@import "componentes/fonte.scss";
+
+.im {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.im * {
+  padding: 0;
+  margin: 0;
+  font-family: $fonte-padrao;
+}
+
+.im ul {
+  list-style: none;
+}
+
+@import "componentes/primeira-secao.scss";
+@import "componentes/segunda-secao.scss";
+@import "componentes/terceira-secao.scss";
+@import "componentes/quarta-secao.scss";
+@import "componentes/quinta-secao.scss";
+@import "componentes/sexta-secao.scss";

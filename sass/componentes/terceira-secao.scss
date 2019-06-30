@@ -1,0 +1,57 @@
+.terceira-secao {
+  position: relative;
+  .geometria-logo {
+    position: absolute;
+    right: -150px;
+    top: 0;
+    height: 600px;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .container-palestrantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    @media screen and (max-width: 1600px) {
+      flex-direction: column;
+    }
+  }
+
+  .palestrantes {
+    display: flex;
+    align-items: center;
+    @include nome-usuario(28px);
+    margin-bottom: 40px;
+    img {
+      height: 480px;
+    }
+    &:first-child {
+      margin-right: 32px;
+      @media screen and (max-width: 1600px) {
+        margin-right: 0;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .titulo-palestrante {
+      min-width: 280px;
+      position: relative;
+      left: -4px;
+      background: #643b8f;
+      display: block;
+      padding: 16px 56px;
+      &::after {
+        bottom: 12px;
+      }
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 24px;
+        margin-top: -56px;
+      }
+    }
+  }
+}

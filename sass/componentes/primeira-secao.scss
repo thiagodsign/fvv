@@ -1,0 +1,120 @@
+@mixin padrao-de-imagem($link) {
+  background-image: url($link);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  position: relative;
+}
+.primeira-secao {
+  @include padrao-de-imagem('apoio/bg1.jpg');
+  .geometria-logo {
+    position: absolute;
+    height: 800px;
+    top: -150px;
+    left: -100px;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .geometria-logo {
+      height: 500px;
+      top: -100px;
+      left: -80px;
+    }
+  }
+
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+  }
+
+  .logo {
+    height: 200px;
+    margin-right: 32px;
+    @media screen and (max-width: 1200px) {
+      margin-right: 0px;
+    }
+  }
+
+  .container-primario {
+    display: flex;
+    font-size: 26px;
+    padding-top: 88px;
+    align-items: center;
+    li {
+      font-weight: $fonte-italica;
+      margin-right: 32px;
+      color: #f8b841;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      padding-top: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        margin: 0 16px;
+      }
+    }
+  }
+
+  .container-secundario {
+    position: relative;
+    left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+      left: 0px;
+      flex-direction: column;
+    }
+  }
+
+  .descricao {
+    display: flex;
+    flex-direction: column;
+    color: #f8b841;
+    max-width: 560px;
+    width: 100%;
+    font-size: 24px;
+    padding-right: 24px;
+    @media screen and (max-width: 1200px) {
+      padding-right: 0px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      width: calc(100% - 48px);
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .descricao h1 {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 28px;
+    max-width: 480px;
+    img {
+      max-width: 280px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      display: flex;
+      img {
+        width: calc(100% - 56px);
+        margin: 0 auto;
+      }
+    }
+  }
+}
