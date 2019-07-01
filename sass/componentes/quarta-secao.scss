@@ -1,11 +1,11 @@
 .background-passagem {
-  @include padrao-de-imagem("apoio/bg4.png");
+  @include padrao-de-imagem("apoio/bg4.jpg");
   height: 240px;
   width: 100vw;
 }
 
 .quarta-secao {
-  @include padrao-de-imagem("apoio/bg3.png");
+  @include padrao-de-imagem("apoio/bg3.jpg");
   min-height: 800px;
   background-position: center center;
   display: flex;
