@@ -9,7 +9,7 @@ $fonte-italica: 800;
   font-style: normal;
   font-weight: $fonte-regular;
   font-display: swap;
-  src: local("Gotham R Book"), local("Gotham-R-Book"), url(../fontes/Gotham-R-Book.otf) format("opentype");
+  src: local("Gotham R Book"), local("Gotham-R-Book"), url(fontes/Gotham-R-Book.otf) format("opentype");
 }
 
 @font-face {
@@ -17,7 +17,7 @@ $fonte-italica: 800;
   font-style: normal;
   font-weight: $fonte-seminegrito;
   font-display: swap;
-  src: local("Gotham R Medium"), local("Gotham-R-Medium"), url(../fontes/Gotham-R-Medium.otf) format("opentype");
+  src: local("Gotham R Medium"), local("Gotham-R-Medium"), url(fontes/Gotham-R-Medium.otf) format("opentype");
 }
 
 @font-face {
@@ -25,7 +25,7 @@ $fonte-italica: 800;
   font-style: normal;
   font-weight: $fonte-negrito;
   font-display: swap;
-  src: local("Gotham R Bold"), local("Gotham-R-Bold"), url(../fontes/Gotham-R-Bold.otf) format("opentype");
+  src: local("Gotham R Bold"), local("Gotham-R-Bold"), url(fontes/Gotham-R-Bold.otf) format("opentype");
 }
 
 @font-face {
