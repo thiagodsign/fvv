@@ -45,15 +45,26 @@
         height: 24px;
         margin-right: 8px;
       }
-      p {
+      a {
         font-size: 18px;
         display: flex;
         align-items: center;
         margin-bottom: 16px;
+        color: #fff;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+          text-decoration: underline;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        margin-top: 24px;
       }
     }
   }
   @media screen and (max-width: 1200px) {
+    margin-top: 24px;
     padding-bottom: 80px;
   }
 }
