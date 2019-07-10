@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+section {
+  overflow: hidden;
+}
+
 @import "componentes/primeira-secao.scss";
 @import "componentes/segunda-secao.scss";
 @import "componentes/terceira-secao.scss";
